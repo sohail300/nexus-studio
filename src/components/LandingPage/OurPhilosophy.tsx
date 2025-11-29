@@ -30,14 +30,15 @@ const OurPhilosophy = () => {
           className="w-1/2 md:block hidden"
         />
         <h1 className="px-2 md:pr-32 text-2xl md:text-xl font-regular leading-7 md:leading-6">
-          In our team, developers work alongside designers, strategists and
-          analysts. Cuberto doesn&apos;t do cookie-cutter solutions and we build
-          products exactly as they were during the design phase, no short cuts
-          or simplifications. <br />
+          Every brand has a story. Our mission is to tell yours in the most
+          compelling way possible. Through thoughtful design, intuitive
+          interfaces, and seamless interactions, we create digital experiences
+          that forge genuine connections. <br />
           <br />
-          We&apos;re driven by user‑centered design that drives productivity and
-          increases revenue. Our expertise and ingenuity are remarkable, yet we
-          always strive to outdo and outperform our previous achievements.
+          We approach each project with fresh eyes and an open mind. No
+          templates, no shortcuts—just authentic creativity backed by technical
+          mastery. The outcome? Digital products that feel personal, perform
+          brilliantly, and grow with your business.
         </h1>
       </div>
     </div>

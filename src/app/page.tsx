@@ -32,9 +32,9 @@ export default function Home() {
       <Landingpage />
       <ShortPromo />
       <WhatWeDo />
+      {/* <OurPhilosophy /> */}
       <FeaturedProjects setCursorState={setCursorState} />
-      <OurPhilosophy />
-      <Resources />
+      {/* <Resources /> */}
       <UiProjectSection setCursorState={setCursorState} />
       <Socials />
       <Cursor

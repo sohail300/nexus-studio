@@ -3,8 +3,8 @@ import "./globals.css";
 import SmoothScrolling from "@/components/ui/SmoothScrolling";
 
 export const metadata: Metadata = {
-  title: "Cuberto",
-  description: "Cuberto Website",
+  title: "Nexus Studio",
+  description: "Nexus Studio Website",
 };
 
 export default function RootLayout({

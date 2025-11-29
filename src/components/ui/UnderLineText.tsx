@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 
-const UnderLineText = ({ children, className }: { children: ReactNode, className?: string }) => {
+const UnderLineText = ({ children, href, target = "_blank", className }: { children: ReactNode, href?: string, target?: string, className?: string }) => {
   return (
     <div className={`underline-text-wrapper ${className}`}>
-      <button className="underline-text font-light-regular border-b-1 border-black/30 ">{children}</button>
+      <a href={href} target={target} className="underline-text font-light-regular border-b-1 border-black/30 ">{children}</a>
 
       <style jsx>{`
         .underline-text-wrapper {

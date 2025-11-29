@@ -7,17 +7,19 @@ const STAGGER = 0;
 interface IFlipText {
     children: string;
     href?: string;
+    target?: string;
     duration?: number;
     stagger?: number;
     className?: string
 }
 
-const FlipText = ({ children, href, duration = DURATION, stagger = STAGGER, className }: IFlipText) => {
+const FlipText = ({ children, href, target, duration = DURATION, stagger = STAGGER, className }: IFlipText) => {
     return (
         <motion.a
             initial="initial"
             whileHover="hovered"
             href={href}
+            target={target}
             className={`relative block overflow-hidden ${className}`}
         >
             <div className="relative overflow-hidden w-full h-full flex items-center justify-center">

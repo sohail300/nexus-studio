@@ -16,7 +16,7 @@ const socials = [
   {
     key: "2",
     platform: "LinkedIn",
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/md-sohail-ansari-b51201278/",
     icon: <ArrowUpRight className="h-12 w-12" />,
   },
   {
@@ -28,7 +28,7 @@ const socials = [
   {
     key: "4",
     platform: "GitHub",
-    link: "https://www.github.com",
+    link: "https://www.github.com/sohail300/",
     icon: <ArrowUpRight className="h-12 w-12" />,
   },
   {
@@ -46,14 +46,14 @@ const socials = [
   {
     key: "7",
     platform: "X",
-    link: "https://www.x.com",
+    link: "https://www.x.com/sohail_twts/",
     icon: <ArrowUpRight className="h-12 w-12" />,
   },
 ];
 
 const Socials = () => {
   return (
-    <div className="w-full min-h-screen bg-black pt-20 md:pt-32">
+    <div className="w-full min-h-screen bg-black pt-20 md:pt-32" id="contact">
       <VelocityScroll numRows={1} defaultVelocity={100}>
         <h1 className="text-8xl md:text-[12rem] text-white font-regular px-10 tracking-tighter mb-16">
           Follow Us
@@ -80,7 +80,7 @@ const Socials = () => {
 
       <div className="w-full px-4 md:px-20 flex flex-col md:flex-row relative z-10 bg-black py-24">
         <div className="w-full md:w-1/2 flex flex-col text-light-regular">
-          <div className="flex items-center gap-8 md:gap-4">
+          {/* <div className="flex items-center gap-8 md:gap-4">
             <TextAnimate className="text-white text-lg md:text-xs items-center uppercase">
               Main Office
             </TextAnimate>
@@ -90,16 +90,17 @@ const Socials = () => {
           </div>
           <TextAnimate className="text-white text-3xl md:text-2xl">
             Alexandria VA, 22314
-          </TextAnimate>
+          </TextAnimate> */}
           <Button
+            url="mailto:sohailatwork10@gmail.com"
             className="border-1 border-white rounded-4xl w-fit text-white font-light-regular text-2xl md:text-2xl mt-8 hover:invert"
             padding="pt-4 pb-2 md:py-2 px-6 md:px-4 uppercase"
           >
-            Info@cuberto.com
+            sohailatwork10@gmail.com
           </Button>
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col text-light-regular py-32 md:py-0">
+        {/* <div className="w-full md:w-1/2 flex flex-col text-light-regular py-32 md:py-0">
           <div className="flex items-center gap-8 md:gap-4">
             <TextAnimate className="text-white text-lg md:text-xs items-center uppercase">
               Second Office
@@ -114,10 +115,11 @@ const Socials = () => {
           <Button
             className="border-1 border-white rounded-4xl w-fit text-white font-light-regular text-2xl mt-8 hover:invert"
             padding="pt-4 pb-2 md:py-2 px-6 md:px-4 uppercase"
+            url="tel:+919826000000"
           >
             +1 301 549 9309
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

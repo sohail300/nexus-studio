@@ -8,37 +8,37 @@ const cards = [
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "HomeoHealth",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "Farmers Finder",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "LaundryHub",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "SofaHub",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "SportsHub",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
   {
     imageUrl: "/assets/cover.png",
     href: "/image",
-    title: "cuberto",
+    title: "MusicHub",
     icon: <Dribbble className="h-6 md:h-4" />,
   },
 ];
@@ -98,13 +98,14 @@ const UiProjectSection: React.FC<UiProjectSectionProps> = ({
       className="relative flex w-full flex-col items-center justify-center overflow-hidden -top-20 md:mb-20"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      id="design-inspiration"
     >
       <VelocityScroll numRows={1} defaultVelocity={100}>
         <h1 className="text-[8rem] md:text-[12rem] font-regular ml-48 md:ml-64">
-          New Day -
+          Design
         </h1>
         <h1 className="text-[8rem] md:text-[12rem] font-light-italic">
-          New Inspo
+          Inspo
         </h1>
         <video
           src="/assets/header3.mp4"

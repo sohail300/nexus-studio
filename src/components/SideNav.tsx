@@ -4,20 +4,42 @@ import FlipText from "./FlipText";
 import UnderLineText from "./ui/UnderLineText";
 
 const socialLinks = [
-  "Linkedin",
-  "Behance",
-  "Dribble",
-  "Instagram",
-  "Youtube",
-  "Twitter",
-  "Github",
+  {
+    label: "GitHub",
+    link: "https://github.com/sohail300/",
+  },
+  {
+    label: "Linkedin",
+    link: "https://www.linkedin.com/in/md-sohail-ansari-b51201278/",
+  },
+  {
+    label: "X",
+    link: "https://x.com/sohail_twts/",
+  }
 ];
+
 const menuItems = [
-  "What we do",
-  "Projects",
-  "Company",
-  "Tutorials",
-  "Contacts",
+  {
+    label: "What we do",
+    link: "/#what-we-do",
+  },
+  {
+    label: "About us",
+    link: "/#about-us",
+  },
+  {
+    label: "Projects",
+    link: "/#projects",
+  },
+
+  {
+    label: "Design Inspo",
+    link: "/#design-inspiration",
+  },
+  {
+    label: "Contacts",
+    link: "/#contact",
+  },
 ];
 
 const SideNav = ({
@@ -44,7 +66,7 @@ const SideNav = ({
           className="text-3xl md:text-2xl px-7 md:px-12 pt-7 md:pt-6 fixed text-black md:text-white font-semibold z-60 duration-1000 transition-all ease-in-out"
           style={{ opacity: isOpen ? 1 : 0 }}
         >
-          cuberto
+          Nexus Studio
         </h1>
       )}
 
@@ -72,7 +94,7 @@ const SideNav = ({
                     animate={{ opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
-                    <FlipText className="pb-4 w-fit">{link}</FlipText>
+                    <FlipText href={link.link} target="_blank" className="pb-4 w-fit">{link.label}</FlipText>
                   </motion.div>
                 ))}
               </div>
@@ -82,14 +104,14 @@ const SideNav = ({
                 Menu
               </h1>
               <div className="text-5xl font-light-regular flex flex-col tracking-tighter">
-                {menuItems.map((item, index) => (
+                {menuItems.map((item: { label: string, link: string }, index: number) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
-                    <FlipText className="pb-6 md:pb-4 w-fit">{item}</FlipText>
+                    <FlipText href={item.link} className="pb-6 md:pb-4 w-fit">{item.label}</FlipText>
                   </motion.div>
                 ))}
               </div>
@@ -100,8 +122,7 @@ const SideNav = ({
               Get in touch
             </h1>
             <div className="flex text-base md:text-xl">
-              <UnderLineText className="w-1/2">info@cuerto.com</UnderLineText>
-              <UnderLineText>Our workflow</UnderLineText>
+              <UnderLineText href="mailto:sohailatwork10@gmail.com" target="_blank" className="w-1/2">sohailatwork10@gmail.com</UnderLineText>
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
   setCursorState,
 }) => {
   return (
-    <div className="min-h-screen bg-black/90 md:rounded-t-[5rem] px-4 pt-20 pb-56 md:px-40 md:pt-32 md:pb-64">
+    <div className="min-h-screen bg-black/90 md:rounded-t-[5rem] px-4 pt-20 pb-56 md:px-40 md:pt-32 md:pb-64" id="projects">
       <h1 className="text-white font-regular text-7xl md:text-9xl">Featured</h1>
       <div className="flex items-center mt-2 gap-4">
         <motion.div
